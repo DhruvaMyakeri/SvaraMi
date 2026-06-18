@@ -1,0 +1,18 @@
+CONFOUND GATE VERDICT: RED
+
+Significant features: 11/11 (100%)
+
+Strong separation detected. Cross-corpus reference is contaminated. Switch to in-corpus control referencing for all cross-condition claims.
+
+                feature  clac_mean_dev  oxford_hc_mean_dev       p_value  significant
+0                meanF0       0.005495            1.187630  2.803688e-03         True
+1                   HNR       0.003062            1.905528  9.927748e-09         True
+2           localJitter      -0.002502           -0.556450  2.486119e-03         True
+3   localabsoluteJitter      -0.003363           -0.707411  2.952968e-04         True
+4             rapJitter      -0.002275           -0.547383  2.273494e-03         True
+5            ppq5Jitter      -0.002484           -0.571181  6.455061e-04         True
+6          localShimmer      -0.000620           -1.554170  1.893406e-16         True
+7        localdbShimmer      -0.000561           -1.686314  6.404637e-16         True
+8           apq3Shimmer       0.000482           -1.408010  1.995535e-12         True
+9          aqpq5Shimmer      -0.000643           -1.352079  3.122309e-15         True
+10         apq11Shimmer      -0.001535           -1.306630  8.895337e-16         True

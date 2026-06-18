@@ -3,8 +3,7 @@ CLAC-Dataset/
 parkinsons/
 parkinsons+telemonitoring/
 
-# Outputs
-outputs/
+
 
 # Python
 __pycache__/
