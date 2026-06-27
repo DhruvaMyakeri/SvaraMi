@@ -1,0 +1,54 @@
+2026-06-23 12:18:15  INFO      __main__ – ============================================================
+2026-06-23 12:18:15  INFO      __main__ – STAGE 1/10  Data Discovery
+2026-06-23 12:18:15  INFO      __main__ – ============================================================
+2026-06-23 12:18:16  INFO      data_loader – Found 618 valid WAV files in data\pitt_corpus [AD]
+2026-06-23 12:18:16  INFO      data_loader – Found 484 valid WAV files in data\healthy_controls [HC]
+2026-06-23 12:18:16  INFO      data_loader – Dataset manifest: 1102 recordings total  |  AD=618  HC=484  |  transcripts=0
+2026-06-23 12:18:16  INFO      __main__ – ============================================================
+2026-06-23 12:18:16  INFO      __main__ – STAGE 2/10  Acoustic Feature Extraction
+2026-06-23 12:18:16  INFO      __main__ – ============================================================
+2026-06-23 14:51:28  INFO      feature_extractor – Feature extraction complete: 1102/1102 succeeded.
+2026-06-23 14:51:28  INFO      __main__ – ============================================================
+2026-06-23 14:51:28  INFO      __main__ – STAGE 3/10  Transcript Feature Extraction
+2026-06-23 14:51:28  INFO      __main__ – ============================================================
+2026-06-23 14:51:28  INFO      transcript_feature_extractor – Transcript extraction: 0/1102 recordings have .cha files.
+2026-06-23 14:51:28  INFO      __main__ – ============================================================
+2026-06-23 14:51:28  INFO      __main__ – STAGE 4/10  Merging Features
+2026-06-23 14:51:28  INFO      __main__ – ============================================================
+2026-06-23 14:51:28  INFO      __main__ – Active features: 27
+2026-06-23 14:51:29  INFO      __main__ – Saved extracted_features.csv
+2026-06-23 14:51:29  INFO      __main__ – ============================================================
+2026-06-23 14:51:29  INFO      __main__ – STAGE 5/10  Building Healthy Reference Intervals
+2026-06-23 14:51:29  INFO      __main__ – ============================================================
+2026-06-23 14:51:29  INFO      healthy_reference – Building reference intervals from 968 HC recordings over 27 features.
+2026-06-23 14:51:29  INFO      healthy_reference – Reference table built: 27 features.
+2026-06-23 14:51:29  INFO      __main__ – Saved healthy_reference.csv
+2026-06-23 14:51:29  INFO      __main__ – ============================================================
+2026-06-23 14:51:29  INFO      __main__ – STAGE 6/10  Computing Deviation Scores
+2026-06-23 14:51:29  INFO      __main__ – ============================================================
+2026-06-23 14:51:29  INFO      deviation_scoring – Computing deviation scores for 2204 participants × 27 features.
+2026-06-23 14:51:37  INFO      deviation_scoring – Group AD: mean |z| = 0.746 ± 0.297  (n=1236)
+2026-06-23 14:51:37  INFO      deviation_scoring – Group HC: mean |z| = 0.735 ± 0.315  (n=968)
+2026-06-23 14:51:37  INFO      __main__ – Saved deviation_scores.csv
+2026-06-23 14:51:37  INFO      __main__ – ============================================================
+2026-06-23 14:51:37  INFO      __main__ – STAGE 7/10  Radar Plots
+2026-06-23 14:51:37  INFO      __main__ – ============================================================
+2026-06-23 14:51:37  INFO      radar_plots – Participants after aggregation: HC=99  AD=194
+2026-06-23 14:51:38  INFO      radar_plots – Saved radar_hc.png
+2026-06-23 14:51:39  INFO      radar_plots – Saved radar_ad.png
+2026-06-23 14:51:41  INFO      radar_plots – Saved radar_comparison.png
+2026-06-23 14:51:41  INFO      __main__ – ============================================================
+2026-06-23 14:51:41  INFO      __main__ – STAGE 8/10  Deviation Heatmap
+2026-06-23 14:51:41  INFO      __main__ – ============================================================
+2026-06-23 14:52:25  INFO      heatmap_visualization – Saved outputs\deviation_heatmap.png
+2026-06-23 14:52:25  INFO      __main__ – ============================================================
+2026-06-23 14:52:25  INFO      __main__ – STAGE 9/10  Distribution Plots
+2026-06-23 14:52:25  INFO      __main__ – ============================================================
+2026-06-23 14:52:44  INFO      heatmap_visualization – Saved 27 boxplots and 27 violin plots.
+2026-06-23 14:52:44  INFO      __main__ – ============================================================
+2026-06-23 14:52:44  INFO      __main__ – STAGE 10/10  Summary Report
+2026-06-23 14:52:44  INFO      __main__ – ============================================================
+2026-06-23 14:52:44  INFO      __main__ – Saved summary_report.txt
+2026-06-23 14:52:44  INFO      __main__ – Saved group_feature_stats.csv
+2026-06-23 14:52:44  INFO      __main__ – Pipeline complete in 9268.3 seconds.
+2026-06-23 14:52:44  INFO      __main__ – All outputs saved to: C:\Users\swaroop\PROGRAMMING\research\outputs
