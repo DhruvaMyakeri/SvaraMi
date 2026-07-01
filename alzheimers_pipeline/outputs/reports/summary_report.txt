@@ -1,0 +1,49 @@
+======================================================================
+ALZHEIMER'S SPEECH BIOMARKER ANALYSIS — SUMMARY REPORT
+======================================================================
+
+SAMPLE
+----------------------------------------
+  HC: 968 recordings
+  AD: 1236 recordings
+
+FEATURE COVERAGE
+----------------------------------------
+  Active features: 27
+
+HEALTHY REFERENCE  (mean ± std)
+----------------------------------------
+  f0_mean                           167.1512  ±  33.5452  (n=968)
+  f0_std                             53.0447  ±  19.7903  (n=968)
+  f0_min                             82.2096  ±  21.2611  (n=968)
+  f0_max                            449.2841  ±  66.1405  (n=968)
+  hnr                                13.0512  ±  3.9596  (n=968)
+  jitter_local                        0.0191  ±  0.0068  (n=968)
+  jitter_absolute                     0.0001  ±  0.0001  (n=968)
+  jitter_rap                          0.0090  ±  0.0036  (n=968)
+  jitter_ppq5                         0.0096  ±  0.0038  (n=968)
+  shimmer_local                       0.0888  ±  0.0175  (n=968)
+  shimmer_apq3                        0.0367  ±  0.0095  (n=968)
+  shimmer_apq5                        0.0508  ±  0.0149  (n=968)
+  shimmer_apq11                       0.0881  ±  0.0246  (n=960)
+  f1_mean                           727.7524  ±  101.2255  (n=968)
+  f2_mean                          1828.2238  ±  117.4097  (n=968)
+  f3_mean                          2951.8420  ±  125.8487  (n=968)
+  f4_mean                          4107.8035  ±  103.7436  (n=968)
+  recording_duration                 62.9064  ±  24.0029  (n=968)
+  speaking_duration                  23.7934  ±  16.7132  (n=968)
+  n_pauses                           34.1653  ±  17.9457  (n=968)
+  mean_pause_duration                 1.8400  ±  3.3501  (n=968)
+  max_pause_duration                  9.2506  ±  10.5525  (n=968)
+  total_pause_time                   39.1130  ±  19.4742  (n=968)
+  silence_ratio                       0.6213  ±  0.1896  (n=968)
+  speech_rate                         0.3095  ±  0.1493  (n=968)
+  articulation_rate                   0.8543  ±  0.2378  (n=968)
+  phonation_time_ratio                0.3787  ±  0.1896  (n=968)
+
+MEAN DEVIATION SCORE (|z| mean across features)
+----------------------------------------
+  AD:  mean=0.746  std=0.297  min=0.294  max=2.119  (n=1236)
+  HC:  mean=0.735  std=0.315  min=0.278  max=2.132  (n=968)
+
+======================================================================
